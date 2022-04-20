@@ -3,7 +3,7 @@
     "config": {
         "wifi-en": {
             "help": "Enable pin",
-            "value": "NC"
+            "value": "PA_15"
         },
         "wifi-io0": {
             "help": "IO0 pin",
@@ -11,11 +11,11 @@
         },
         "wifi-tx": {
             "help": "Serial TX pin",
-            "value": "NC"
+            "value": "PG_14"
         },
         "wifi-rx": {
             "help": "Serial RX pin",
-            "value": "NC"
+            "value": "PG_9"
         },
         "wifi-debug": {
             "help": "Enable debugging",
@@ -31,34 +31,11 @@
         },
         "wifi-baudrate": {
             "help": "Serial baudrate",
-            "value": "230400"
+            "value": "115200"
         },
         "provide-default": {
             "help": "Provide default WifiInterface. [true/false]",
             "value": false
         }
-    },
-    "target_overrides": {
-        "GR_LYCHEE": {
-            "esp32.wifi-en" : "P5_3",
-            "esp32.wifi-io0": "P3_14",
-            "esp32.wifi-tx" : "P7_1",
-            "esp32.wifi-rx" : "P0_1",
-            "esp32.wifi-rts": "P7_7",
-            "esp32.wifi-cts": "P7_6",
-            "esp32.provide-default": true
-        },
-        "RZ_A1H": {
-            "esp32.wifi-en" : "P3_10",
-            "esp32.wifi-io0": "P3_9",
-            "esp32.wifi-tx" : "P2_14",
-            "esp32.wifi-rx" : "P2_15"
-        },
-        "DISCO_HEIAFR": {
-            "esp32.wifi-en" : "PA_15",
-            "esp32.wifi-tx" : "PG_14",
-            "esp32.wifi-rx" : "PG_9",
-            "esp32.wifi-baudrate": "115200"
-        }    
     }
 }
