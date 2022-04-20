@@ -1,0 +1,19 @@
+{
+    "name": "ESP32-Device",
+    "version": "0.0.1",
+    "description": "ESP32-Device",
+    "authors":
+    [
+      {
+        "name": "Jacques Supcik",
+        "email": "jacques.supcik@hefr.ch",
+        "maintainer": true
+      }
+    ],
+    "license": "Apache-2.0",
+    "frameworks": "mbed",
+    "platforms": "ststm32",
+    "build": {
+      "builder": "MbedLibBuilder"
+    }
+  }
